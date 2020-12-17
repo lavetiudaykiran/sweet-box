@@ -26,6 +26,7 @@ import com.org.flightbooking.service.FlightService;
 @RestController
 @RequestMapping("/flights")
 public class FlightController {
+  //hello uday 
 	@Autowired
 	FlightService flightService;
 
