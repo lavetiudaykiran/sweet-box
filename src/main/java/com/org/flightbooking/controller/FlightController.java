@@ -26,7 +26,7 @@ import com.org.flightbooking.service.FlightService;
 @RestController
 @RequestMapping("/flights")
 public class FlightController {
-  //hello uday 
+  
 	@Autowired
 	FlightService flightService;
 
@@ -47,6 +47,7 @@ public class FlightController {
 			FlightDetailsRequestDto flightDetailsRequestDto) throws CustomException, ParseException {
 		logger.info("searchFlightDetails method of FlightCntroller class");
 		return new ResponseEntity<>(flightService.searchFlightDetails(flightDetailsRequestDto), HttpStatus.OK);
+               System.out.println("hello");
 	}
 
 	/**
